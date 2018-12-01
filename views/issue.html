@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Welcome to HyperDev!</title>
+    <meta name="description" content="A cool thing made with HyperDev">
+    <!--<link id="favicon" rel="icon" href="https://hyperdev.com/favicon-app.ico" type="image/x-icon">-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/public/style.css">
+  </head>
+  <body>
+    <header>
+      <h1 id="projectTitle"></h1>
+      <a id="homeButton" href="/">Home</a>
+    </header>
+    <center>
+      <div id="submitNewIssue">
+        <form id="newIssue" method="post" action="/api/">
+          <br>
+          <h3>Submit a new issue:</h3>
+          <input id="issue_title" type="text" name="issue_title" placeholder="*Title" required title="title"><br>
+          <textarea id="issue_text" type="text" name="issue_text" placeholder="*Text" required title="issue text"></textarea><br>
+          <input id="cbyU" class="byto" type="text" name="created_by" placeholder="*Created by" required title="created by">
+          <input id="assU" class="byto" type="text" name="assigned_to" placeholder="(opt)Assigned to" title="assigned to">
+          <input id="statU" class="stat" type="text" name="status_text" placeholder="(opt)Status text" title="status"><br>
+          <button id="addButton" type="submit">Submit Issue</button>
+        </form>
+      </div>
+      
+      
+      <div class="modal" id="submitEditIssue"> 
+        <form class="modal-form" id="editIssue" method="put" action="/api/">
+          <br>
+          <span class="close-button">×</span>
+          <h3>Edit issue:</h3><span id="currentId"></span>
+          <input id="iss_title" type="text" name="issue_title" placeholder="*Title" required title="title"><br>
+          <textarea id="iss_text" type="text" name="issue_text" placeholder="*Text" required title="issue text"></textarea><br>
+          <input id="cby" class="byto" type="text" name="created_by" placeholder="*Created by" required title="created by">
+          <input id="ass" class="byto" type="text" name="assigned_to" placeholder="(opt)Assigned to" title="assigned to">
+          <input id="stat" class="stat" type="text" name="status_text" placeholder="(opt)Status text" title="status"><br>
+          <button id="editButton" type="submit">Update Issue</button>
+        </form>
+      </div>
+      
+      
+      <div id="issueDisplay"></div>
+      
+      
+      
+    </center>
+    
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+            crossorigin="anonymous"></script>
+    
+    <script type="text/javascript" src="../public/issues.js"></script>
+    
+  </body>
+</html>

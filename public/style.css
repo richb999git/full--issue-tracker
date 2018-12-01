@@ -1,0 +1,266 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  padding: 20px;
+  color: white;
+  background-color: black;
+  font-family: sans-serif;
+}
+
+#userstories {
+  margin-left: 5%;
+  margin-top: 1%;
+}
+
+#issueDisplay {
+  text-align: center;
+  margin: 0 auto 0 auto;
+}
+
+.issue {
+  margin: 15px;
+  padding: 5px;
+  width: 290px;
+  height: 280px;
+  border-radius: 5px;
+  background-color: #D500F9;
+  float: left;
+  font-size: 14px;
+  text-align: left;
+}
+
+.issueDetails {
+  margin-left: 8px;
+}
+
+.closed {
+  background-color: #B0BEC5;
+}
+
+.id {
+  font-size: 12px;
+}
+
+
+.project {
+  width: 250px;
+  height: 100px;
+  float: left;
+  color: black;
+  background-color: yellow;
+  margin: 10px;
+  padding: 8px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.projectButton {
+  background-color: #FFEB3B;
+  padding: 2px 4px 2px 4px;
+  border-radius: 4px;
+  border-style: solid;
+  border-width: thin;
+  text-decoration: none;
+  vertical-align: super;
+  position: relative;
+  top: -15px;
+  color: black;
+}
+
+.projectButton:hover {
+  background-color: white;
+}
+
+#projectTitle {
+  margin-top: -15px;
+  margin-bottom: 6px;
+}
+
+input {
+  background-color: #FFC;
+  padding: 3px;
+  border-radius: 3px;
+  border-style: solid;
+  border-width: thin;
+  border-color: black;
+  height: 18px;
+  
+}
+
+input[type="submit"] {
+  background-color: #FFEB3B;
+  padding: 3px;
+  border-radius: 3px;
+  border-style: solid;
+  border-width: thin;
+  font-weight: bold;
+  height: 25px;
+  margin-top: 4px;
+}
+
+input[type="submit"]:hover {
+  cursor: pointer;
+  background-color: white;
+  color: #212121;
+}
+
+h4 { margin: 4px; }
+h3 { color: black; }
+
+
+.openI, .closedI, .lastUpdate {
+  padding: 6px;
+  margin-top: 6px;
+}
+
+/* issue open/closed text */
+.rightC { float: right; }
+
+.title {
+  font-size: 25px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.closeIssue, .deleteIssue, .editIssue {
+  color: white;
+  border-style: solid;
+  border-radius: 3px;
+  border-width: thin;
+  padding: 4px;
+  font-size: 14px;
+  margin-right: 9px;
+  margin-left: 0px;
+}
+.editIssue {margin-left: 4px;}
+
+.closeIssue:hover, .deleteIssue:hover, .editIssue:hover {
+  color: black;
+}
+
+
+
+
+
+#submitNewIssue {
+  background-color: #FFECB3;
+  width: 330px;
+  border-radius: 4px;
+  margin-top: 6px;
+}
+
+#issue_title, #iss_title {
+  width: 90%;
+  margin-bottom: 3px;
+  border-radius: 4px;
+}
+
+#issue_text, #iss_text {
+  width: 90%; 
+  height: 60px;
+  border-radius: 4px;
+  padding: 3px;
+}
+
+.updateIssue {
+  display: inline;
+  font-size: 20px;
+}
+
+.updateIssue:hover {
+  cursor: pointer;
+  color: white;
+}
+
+.byto { width: 43%; }
+.stat { width: 90%; margin-top: 3px; }
+
+#addButton, #editButton {
+  border-radius: 4px;
+  background-color: #FFCC80;
+  color: black;
+  width: 100px;
+  height: 30px;
+  padding: 3px;
+  margin: 6px;
+  border: none;
+}
+
+#addButton:hover, #editButton:hover {
+  cursor: pointer;
+  background-color: #FF7043;
+  color: white;
+}
+
+
+
+
+/* modal css */
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.modal-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 330px;
+    border-radius: 5px;
+    background-color: #FFECB3;
+}
+
+.show-modal {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.status {
+  float:right;
+}
+
+.close-button {
+    width: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: #FFCC80;
+    position:absolute;
+    right:-10px;
+    top:-10px;
+    color: black;
+}
+.close-button:hover  {
+    color: white;
+    background-color: #FF7043;
+}
+
+#homeButton {
+  border-radius: 4px;
+  border-style: solid;
+  border-width: thin;
+  padding: 3px;
+  color: white;
+}
+
+#homeButton:hover {
+  background-color: darkgrey;
+  cursor: pointer;
+}
